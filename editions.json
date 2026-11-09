@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "date": "2026-11-09",
+    "title": "Five things worth knowing this week",
+    "intro": "Signals on real-world voice AI, language datasets and evaluation opportunities — with questions for the 60dB team.",
+    "stories": [
+      {
+        "category": "Development-sector voice AI",
+        "date": "Nov 4, 2026",
+        "title": "AI speech tools could help more women farmers be heard",
+        "summary": "IFPRI and Farm Radio International are using real farmer calls to improve African-language speech recognition. Their work highlights why models trained on clean, scripted audio often struggle with actual calls, especially when women face barriers to participating in advisory services. The practical challenge is not simply recognizing a language in principle, but understanding the way farmers speak under real conditions. This is an implementation insight rather than a confirmed buyer request.",
+        "implication": "Field recordings and testing with real users could be more valuable than another generic speech dataset.",
+        "question": "Could agricultural voice-AI providers be potential buyers for our research and evaluation capabilities?",
+        "source": "CGIAR / IFPRI",
+        "url": "https://www.cgiar.org/news-events/news/listening-scale-advancing-womens-participation-agricultural-advisory-through-ai"
+      },
+      {
+        "category": "Voice-agent evaluation",
+        "date": "Nov 5, 2026",
+        "title": "Voice agents are being tested on real banking and healthcare calls",
+        "summary": "Cekura’s benchmark uses 70 caller scenarios spanning banking and healthcare, across 12 ranked voice models. It tests accents, interruptions, noise and switching into Hindi or Spanish. Each scenario is repeated three times to check whether a model consistently manages the same conversation. The focus goes beyond whether speech is transcribed accurately: can the agent handle a difficult caller, maintain the context and complete a task? This is a useful example of how some providers are defining evaluation problems.",
+        "implication": "This suggests a possible offering around realistic test scenarios and local-language evaluation, rather than only data collection.",
+        "question": "Could we build comparable test calls in African languages?",
+        "source": "Cekura",
+        "url": "https://benchmarks.cekura.ai/speech-to-speech/real-calls/methodology"
+      },
+      {
+        "category": "Speech-model research",
+        "date": "Nov 3, 2026",
+        "title": "Text performance does not predict spoken conversation performance",
+        "summary": "Researchers behind Omnilingua-AudioMC compared six speech-language models using 354 conversations in ten languages. Models that appeared capable when processing transcripts could struggle with equivalent spoken exchanges, particularly when they needed to remember information from earlier turns. This matters for assistants that have to follow real conversations, not just a single spoken command. The findings make a case for testing multi-turn speech interaction as a distinct capability, rather than assuming text evaluations are enough.",
+        "implication": "Multi-turn, task-based conversations could be valuable evaluation material for teams building voice agents.",
+        "question": "Should our pilot include conversations where speakers correct or change earlier instructions?",
+        "source": "Omnilingua-AudioMC research",
+        "url": "https://arxiv.org/abs/2611.04390"
+      },
+      {
+        "category": "Competitors and dataset gaps",
+        "date": "Nov 2, 2026 · listing Aug 24",
+        "title": "A Sheng mobile-money speech dataset is already on sale",
+        "summary": "Safi Data is offering natural Sheng and Swahili-English phone recordings focused on mobile money. Mozilla Data Collective lists a one-hour sample with 51 speakers, a planned 50-hour corpus and a listed dataset price of $10,500. This is a vendor listing, not evidence that anyone purchased it. Its focus overlaps with ideas discussed for the Kenya pilot, so it is important to compare the actual audio, metadata, license, speaker diversity and task coverage before claiming a gap in the market.",
+        "implication": "The Kenya pilot needs a specific differentiator — such as more varied task interactions, robust QA, demographic coverage or stronger evaluation use cases.",
+        "question": "What could our dataset offer that this one does not?",
+        "source": "Mozilla Data Collective / Safi Data",
+        "url": "https://mozilladatacollective.com/datasets/cmt7e4pfp004nnz08j3shtpcx"
+      },
+      {
+        "category": "Competitors and market signals",
+        "date": "Nov 3, 2026",
+        "title": "Silencio is investing in endangered-language collection",
+        "summary": "Silencio described a field project in Indonesia to document Kodi, a language with limited written resources. Its stated plan is to collect 50 hours of consented, transcribed and translated speech through paid local contributors, with a non-commercial public release. It illustrates that speech-data organizations are actively developing community-based recruitment, permissioning and language-specific collection processes. However, it is a project announcement, not evidence of buyer demand or a commercial sale.",
+        "implication": "60dB may be able to differentiate through its existing systems for field recruitment, contributor management, training and QA.",
+        "question": "Should we position 60dB more strongly around its fieldwork and contributor-management systems?",
+        "source": "Silencio",
+        "url": "https://www.silencio.network/updates2/everything-he-knows-is-sound"
+      }
+    ]
+  }
+]

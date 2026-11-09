@@ -3,20 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow, noarchive">
 <meta name="description" content="The Audio Signal — a weekly intelligence briefing on AI audio, underrepresented languages, and market opportunities.">
 <meta name="theme-color" content="#112820">
 <title>The Audio Signal | 60 Decibels</title>
 <style>
 :root{--cream:#f7f7f2;--white:#fff;--ink:#16231f;--muted:#66736d;--line:#dedfd7;--green:#17644d;--deep:#112820;--lime:#d8efb4;--paper:#eff2e7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:inherit}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #4c9d81;outline-offset:3px}.wrap{max-width:1040px;margin:auto;padding:0 34px}.top{background:var(--deep);color:white}.topnav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:23px 0;border-bottom:1px solid #ffffff26}.logo{font-size:13px;letter-spacing:.16em;font-weight:800}.tiny{color:#c9d8cd;font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}.hero{padding:72px 0 76px;display:grid;grid-template-columns:1.9fr 1fr;gap:50px;align-items:end}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(45px,7.2vw,88px);line-height:1.02;letter-spacing:-.045em;font-weight:500;margin:18px 0 21px;max-width:660px}.hero p{color:#d9e3d9;font-size:17px;max-width:540px;margin:0}.heroaside{border-left:1px solid #ffffff45;padding-left:26px;color:#e4f1e0;font-size:14px}.accent{display:inline-flex;align-items:center;background:var(--lime);border-radius:100px;color:var(--deep);font-weight:750;letter-spacing:.07em;padding:7px 12px;font-size:11px;text-transform:uppercase}.navline{border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;padding:24px 0}.navbuttons{display:flex;gap:8px}.tab{border:1px solid #cad2c8;border-radius:30px;padding:8px 17px;background:transparent;color:var(--ink);cursor:pointer}.tab[aria-selected="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}.issue-date{color:var(--muted);font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.12em}.content{padding:40px 0 90px}.issuehead{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}.issuehead h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,4vw,43px);font-weight:500;letter-spacing:-.035em;line-height:1.15;margin:11px 0}.issuehead p{margin:0;color:var(--muted)}.issuecount{border:1px solid var(--line);width:90px;height:90px;flex-shrink:0;border-radius:100%;display:grid;place-content:center;text-align:center}.issuecount strong{font:37px/1 Georgia,serif}.issuecount span{font-size:10px;letter-spacing:.12em;text-transform:uppercase}.stories{display:grid;gap:14px}.story{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:29px 34px;box-shadow:0 3px 12px #182c1808}.storymeta{display:flex;flex-wrap:wrap;align-items:center;gap:9px;color:var(--muted);font-size:11px;letter-spacing:.09em;text-transform:uppercase;font-weight:800}.number{background:var(--paper);color:var(--green);border-radius:50%;width:29px;height:29px;display:grid;place-items:center;margin-right:5px}.story h3{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.02em;line-height:1.2;font-size:clamp(22px,3vw,30px);margin:18px 0}.story p{margin:13px 0;line-height:1.72}.interpretation{border-left:3px solid var(--green);padding:1px 0 1px 18px;margin-top:22px}.interpretation p{margin:8px 0}.reflection{background:var(--paper);border-radius:5px;padding:13px 17px;margin-top:19px;line-height:1.55}.story a.source{display:inline-block;margin-top:17px;font-size:13px;color:var(--green);font-weight:700;text-underline-offset:3px}.archive-list{display:grid;gap:10px}.archive-item{width:100%;display:block;text-align:left;padding:20px 22px;background:white;border:1px solid var(--line);border-radius:8px;cursor:pointer}.archive-item:hover{border-color:var(--green)}.archive-item strong{display:block;font:24px/1.3 Georgia,serif;margin:5px 0}.archive-item span{color:var(--muted);font-size:12px}.empty{background:#fff;padding:48px 32px;border:1px dashed #9bada1;border-radius:8px;max-width:730px}.empty h3{font:32px/1.15 Georgia,serif;font-weight:500;margin:14px 0}.empty p{color:var(--muted);margin-bottom:0}.footer{border-top:1px solid var(--line);padding:24px 0 40px;display:flex;justify-content:space-between;gap:24px;font-size:12px;color:var(--muted)}.footer strong{color:var(--green)}@media(max-width:700px){.wrap{padding:0 20px}.hero{grid-template-columns:1fr;padding:50px 0;gap:30px}.heroaside{max-width:400px}.issuehead{align-items:start}.issuecount{display:none}.story{padding:24px 22px}.footer{flex-direction:column}.navline{flex-wrap:wrap}.content{padding-top:30px}}
+
+/* Casual-access passcode gate (not security: files remain public on GitHub Pages). */
+#site-shell[hidden]{display:none!important}
+#passcode-screen[hidden]{display:none!important}
+#passcode-screen{min-height:100vh;display:grid;place-items:center;padding:24px;background:#112820;color:#f9fff7}
+.gate-card{width:min(100%,440px);padding:40px 34px;border:1px solid #ffffff3d;border-radius:12px;background:#193b30;box-shadow:0 22px 70px #0004}
+.gate-brand{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#bfe49e;font-weight:800}
+.gate-card h1{font-family:Georgia,serif;font-size:42px;font-weight:500;letter-spacing:-.04em;margin:18px 0 12px;line-height:1.1}
+.gate-card p{color:#cdded2;margin:0 0 27px}
+.gate-card label{font-size:13px;font-weight:700;display:block;margin-bottom:9px}
+.gate-card input{width:100%;font:inherit;min-height:46px;border:1px solid #a6bdb0;background:white;color:#182b22;border-radius:6px;padding:10px 13px}
+.gate-card button{width:100%;cursor:pointer;margin-top:12px;background:#d8efb4;border:0;color:#112820;border-radius:6px;font-weight:800;padding:12px 18px}
+.gate-card button:hover{background:#ecffd4}
+#gate-error{color:#ffc8c8;font-size:13px;margin:10px 0 0;min-height:18px}
+.gate-note{font-size:11px!important;margin:14px 0 0!important;color:#b3cabc!important}
+
 </style>
 </head>
 <body>
+<section id="passcode-screen" aria-label="The Audio Signal access" >
+  <form id="gate-form" class="gate-card" autocomplete="off">
+    <div class="gate-brand">60 Decibels · AI Audio</div>
+    <h1>The Audio Signal.</h1>
+    <p>A weekly briefing on voice AI, language data, and real-world deployment.</p>
+    <label for="gate-passcode">Enter the team passcode</label>
+    <input id="gate-passcode" type="password" required autofocus placeholder="Passcode" autocomplete="off" aria-describedby="gate-error">
+    <button type="submit">Open newsletter →</button>
+    <div id="gate-error" role="alert" aria-live="polite"></div>
+    <p class="gate-note">This is a casual-access screen, not secure authentication.</p>
+  </form>
+</section>
+<div id="site-shell" hidden>
 <div class="top"><div class="wrap">
 <header class="topnav"><span class="logo">60 DECIBELS</span><span class="tiny">Field intelligence · AI audio</span></header>
 <section class="hero"><div><span class="accent">A weekly intelligence briefing</span><h1>The Audio<br>Signal<span style="color:#bfe49e">.</span></h1><p>Five signals from the world of voice AI, language data, and real-world deployment. Read the findings. Ask better questions. Spot the next opportunity.</p></div><aside class="heroaside"><div class="tiny" style="margin-bottom:12px">What we look for</div>Unmet buyer needs.<br>Underrepresented languages.<br>Models that struggle in the field.<br>Ideas worth testing.</aside></section>
 </div></div>
 <div class="wrap"><div class="navline"><div class="navbuttons"><button class="tab" id="latestTab" aria-selected="true">Latest edition</button><button class="tab" id="archiveTab" aria-selected="false">All editions</button></div><div class="issue-date">Every Thursday · 2 PM ET</div></div><main id="content" class="content" aria-live="polite"></main><footer class="footer"><span><strong>The Audio Signal</strong> · Curated for the 60 Decibels AI Audio workstream</span><span>External findings are linked; opportunities and reflections are hypotheses, not confirmed buyer demand.</span></footer></div>
+</div>
 <script>
+// NOTE: This visual gate does not make publicly hosted website or JSON private.
+const THE_AUDIO_SIGNAL_PASSCODE='audiodata60dB';
+const gate=document.getElementById('passcode-screen');
+const shell=document.getElementById('site-shell');
+const gateForm=document.getElementById('gate-form');
+const passInput=document.getElementById('gate-passcode');
+const gateError=document.getElementById('gate-error');
+function unlock(){gate.hidden=true;shell.hidden=false;passInput.value='';}
+try{if(sessionStorage.getItem('audio-signal-unlocked')==='yes')unlock();}catch{}
+gateForm.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(passInput.value===THE_AUDIO_SIGNAL_PASSCODE){try{sessionStorage.setItem('audio-signal-unlocked','yes')}catch{};gateError.textContent='';unlock();}
+  else{gateError.textContent='Incorrect passcode. Try again.';passInput.select();}
+});
+
 const el=document.getElementById('content');const latestTab=document.getElementById('latestTab');const archiveTab=document.getElementById('archiveTab');let issues=[];
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function safeUrl(u){try{const x=new URL(u);return ['https:','http:'].includes(x.protocol)?x.href:'#';}catch{return '#';}}
