@@ -1,5 +1,62 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "Five things worth knowing this week",
+    "intro": "Voice-agent reliability, multilingual healthcare, accent bias, African code-switching and what model builders still need tested.",
+    "stories": [
+      {
+        "category": "Voice-agent evaluation",
+        "date": "Nov 9, 2026",
+        "title": "A voice agent can sound right and still fail the task",
+        "summary": "G2 and Bluejay tested six voice-agent platforms on 90 simulated business tasks in healthcare, legal services and customer support, repeating each task five times. The strongest platform completed 66 of 90 tasks successfully on all five attempts (73.3%), despite a much higher 89.1% success rate per individual call. Across 680 failed calls, 55% involved a wrong model decision even though transcription was accurate; 28% were speech-recognition errors. The controlled tests used simulated English-speaking callers, so they do not establish performance across other languages or accents. The results show why a pleasant-sounding conversation is not the same thing as a completed customer request.",
+        "implication": "We could recruit local-language testers and evaluate real task outcomes, not just transcription accuracy.",
+        "question": "Could our RAs test whether voice agents correctly complete customer-service tasks in Swahili or other local languages?",
+        "source": "G2 / Bluejay",
+        "url": "https://ai.g2.com/build-notes/we-ran-the-same-90-voice-ai-tasks-five-times-here-s-what-we-learned-about-reliability"
+      },
+      {
+        "category": "Development-sector voice AI",
+        "date": "Nov 11, 2026",
+        "title": "India is bringing multilingual AI voice documentation into public healthcare",
+        "summary": "EkaCare was selected as a technology partner for India’s National Health Authority to build an AI voice scribe for public healthcare. It is designed to listen to doctor–patient conversations and draft structured clinical notes, supporting more than 15 Indian languages and mixed-language consultations. Its speech model has been benchmarked on major Indian languages, while doctors must review and approve notes before they enter the patient record. The selection followed an open-source procurement process and demonstration; it is not yet evidence of a nationwide rollout. This is a concrete institutional application where language coverage, clinical terminology and real-world accuracy matter.",
+        "implication": "Our network could support consented, supervised evaluation across regional languages and clinical scenarios, subject to appropriate healthcare safeguards.",
+        "question": "Could we support healthcare AI providers with local-language testing before tools reach public clinics?",
+        "source": "The Economic Times / EkaCare",
+        "url": "https://economictimes.indiatimes.com/small-biz/entrepreneurship/ekacare-selected-as-tech-partner-for-national-health-authoritys-ambient-ai-enabled-voice-scribe-solution-for-doctors/articleshow/135725961.cms"
+      },
+      {
+        "category": "Accent fairness",
+        "date": "Nov 4, 2026 · Worth revisiting",
+        "title": "AI can transcribe an accent correctly and still judge its speaker unfairly",
+        "summary": "University of Washington researchers tested four speech-capable AI models on the same answers spoken with American, British, Indian, Nigerian and Chinese accents. In assessments resembling interviews, presentations and language tests, models generally scored American and British voices higher, even when they understood and transcribed the speech accurately. The researchers also validated the pattern using 52 human speakers. This matters because accurate transcription is not sufficient evidence that an audio model evaluates users fairly. The team argues for performance measures broken down by accent and population, rather than only one overall average.",
+        "implication": "There may be an evaluation role for our geographically diverse RAs in testing how models judge voices, not just recognize words.",
+        "question": "Could we help developers uncover accent-related bias before deploying speech AI in hiring or education?",
+        "source": "University of Washington",
+        "url": "https://www.washington.edu/news/2026/11/04/ai-models-are-biased-against-certain-accents/"
+      },
+      {
+        "category": "African code-switching · Research",
+        "date": "Aug 26, 2026 · Worth revisiting",
+        "title": "Natural African code-switching remains hard for speech-recognition models",
+        "summary": "The AfriSwitch researchers released a 61.36-hour, human-transcribed benchmark of naturally occurring, code-switched speech spanning 16 African languages and varieties. They annotated English-language spans, switch points and the degree of language mixing, then evaluated five multilingual speech-recognition systems without additional training. Even the best-performing system averaged 35.93% word error rate; none fell below 24% on any language. The authors found that training targeted to African languages mattered more for performance than model scale or nominal language support. This is evidence of a real technical challenge, not proof that buyers will pay for another generic code-switched dataset.",
+        "implication": "Our RAs could record natural Swahili–English/Sheng speech, validate language switches and test specific conversational tasks.",
+        "question": "Could the Kenya pilot benchmark whether existing models understand code-switched mobile-money or banking conversations?",
+        "source": "AfriSwitch research (arXiv)",
+        "url": "https://arxiv.org/abs/2608.26434"
+      },
+      {
+        "category": "Buyer & practitioner signal",
+        "date": "Nov 10, 2026",
+        "title": "A voice-AI builder says benchmarks are missing real accents and interruptions",
+        "summary": "Software developer Leobit compared four real-time voice-AI setups for its sales assistant using 11 scripted questions, multilingual requests, pauses, knowledge-base lookups and synthetic degraded audio. No one system was best across all tasks. For example, fast time-to-first-sound could be misleading when a model says a filler phrase before giving the actual answer. The team explicitly acknowledged what it had not evaluated well: real regional accents, spontaneous interruptions, naturally noisy environments and blind judgments of speech quality. The comparison is a small developer-run benchmark, not independent evidence of broad market demand—but it is a useful firsthand description of testing needs.",
+        "implication": "A small, real-speaker evaluation package may be an easier offer to test with prospective buyers than a large audio dataset.",
+        "question": "Could we approach voice-agent developers with tests using local accents, natural pauses, interruptions and task completion?",
+        "source": "Leobit engineering blog",
+        "url": "https://leobit.com/blog/real-time-voice-ai-gpt-live-vs-gemini-live-vs-elevenlabs/"
+      }
+    ]
+  },
+  {
     "date": "2026-11-09",
     "title": "Five things worth knowing this week",
     "intro": "Signals on real-world voice AI, language datasets and evaluation opportunities — with questions for the 60dB team.",
